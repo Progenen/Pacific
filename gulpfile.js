@@ -42,7 +42,7 @@ function style() {
 
 // Просто перенос html файлов | Just transferring html files
 function html() {
-    return src('src/*/pages.html')
+    return src('src/**/*')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
